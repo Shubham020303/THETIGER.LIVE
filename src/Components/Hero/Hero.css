@@ -1,0 +1,13 @@
+.sliderContainer img {
+     animation: fadeImg 1s ease-out;
+}
+
+@keyframes fadeImg {
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
+}
