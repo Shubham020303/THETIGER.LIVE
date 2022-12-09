@@ -1,5 +1,6 @@
 //Components
-import Navbar from ".//Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 //Pages
 import Homepage from "./Pages/Homepage/Homepage";
@@ -9,6 +10,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <Homepage />
+      <Footer />
     </div>
   );
 }

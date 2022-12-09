@@ -10,6 +10,9 @@ import Travel from "../../Images/Travel_1.png";
 import Beauty from "../../Images/Beauty.png";
 import Electronics from "../../Images/Electronics.png";
 import Hosting from "../../Images/Hosting.png";
+import Fashion from "../../Images/Fashion.png";
+import Medicine from "../../Images/Medicine.png";
+import Grocery from "../../Images/Grocery.png";
 
 const Categories = [
      {
@@ -49,40 +52,16 @@ const Categories = [
           text: "Hosting",
      },
      {
-          img: Home,
-          text: "Home",
+          img: Fashion,
+          text: "Fashion",
      },
      {
-          img: banking,
-          text: "Banking",
+          img: Medicine,
+          text: "Medicine",
      },
      {
-          img: FoodDelivery,
-          text: "Food Delivery",
-     },
-     {
-          img: RechargeBill,
-          text: "Recharge & Bill",
-     },
-     {
-          img: Education,
-          text: "Education",
-     },
-     {
-          img: Travel,
-          text: "Travel",
-     },
-     {
-          img: Beauty,
-          text: "Beauty",
-     },
-     {
-          img: Electronics,
-          text: "Electronics",
-     },
-     {
-          img: Hosting,
-          text: "Hosting",
+          img: Grocery,
+          text: "Grocery",
      },
 ]
 
