@@ -13,120 +13,136 @@ import mamaearth from "../../Images/mamaearth.png";
 import travel from "../../Images/travel.png";
 import pharmeasy from "../../Images/pharmeasy.png";
 import flipkart from "../../Images/flipkart.png";
+import map from "../../Images/map.png";
 
 const Navbar = () => {
 
      const openSidemenu = () => {
           document.getElementById("sidemenu").style.left = "0";
+          document.documentElement.style.scrollBehavior = "smooth";
      }
-     
+
      const closeSidemenu = () => {
           document.getElementById("sidemenu").style.left = "-100%";
-
+          window.scrollTo(0, 0);
           if (document.getElementById("firstOffers").classList.contains("top-0")) {
                document.getElementById("firstOffers").classList.remove("top-0");
-               document.getElementById("firstOffers").classList.add("-top-full");
+               document.getElementById("firstOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("secondOffers").classList.contains("top-0")) {
                document.getElementById("secondOffers").classList.remove("top-0");
-               document.getElementById("secondOffers").classList.add("-top-full");
+               document.getElementById("secondOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("thirdOffers").classList.contains("top-0")) {
                document.getElementById("thirdOffers").classList.remove("top-0");
-               document.getElementById("thirdOffers").classList.add("-top-full");
+               document.getElementById("thirdOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("fourthOffers").classList.contains("top-0")) {
                document.getElementById("fourthOffers").classList.remove("top-0");
-               document.getElementById("fourthOffers").classList.add("-top-full");
+               document.getElementById("fourthOffers").classList.add("-top-[150%]");
           }
      }
 
      const openFirstOffers = () => {
           document.getElementById("firstOffers").classList.toggle("top-0");
-          document.getElementById("firstOffers").classList.toggle("-top-full");
+          document.getElementById("firstOffers").classList.toggle("-top-[150%]");
 
           if (document.getElementById("secondOffers").classList.contains("top-0")) {
                document.getElementById("secondOffers").classList.remove("top-0");
-               document.getElementById("secondOffers").classList.add("-top-full");
+               document.getElementById("secondOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("thirdOffers").classList.contains("top-0")) {
                document.getElementById("thirdOffers").classList.remove("top-0");
-               document.getElementById("thirdOffers").classList.add("-top-full");
+               document.getElementById("thirdOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("fourthOffers").classList.contains("top-0")) {
                document.getElementById("fourthOffers").classList.remove("top-0");
-               document.getElementById("fourthOffers").classList.add("-top-full");
+               document.getElementById("fourthOffers").classList.add("-top-[150%]");
           }
      }
 
      const openSecondOffers = () => {
           document.getElementById("secondOffers").classList.toggle("top-0");
-          document.getElementById("secondOffers").classList.toggle("-top-full");
+          document.getElementById("secondOffers").classList.toggle("-top-[150%]");
 
           if (document.getElementById("firstOffers").classList.contains("top-0")) {
                document.getElementById("firstOffers").classList.remove("top-0");
-               document.getElementById("firstOffers").classList.add("-top-full");
+               document.getElementById("firstOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("thirdOffers").classList.contains("top-0")) {
                document.getElementById("thirdOffers").classList.remove("top-0");
-               document.getElementById("thirdOffers").classList.add("-top-full");
+               document.getElementById("thirdOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("fourthOffers").classList.contains("top-0")) {
                document.getElementById("fourthOffers").classList.remove("top-0");
-               document.getElementById("fourthOffers").classList.add("-top-full");
+               document.getElementById("fourthOffers").classList.add("-top-[150%]");
           }
      }
 
      const openThirdOffers = () => {
           document.getElementById("thirdOffers").classList.toggle("top-0");
-          document.getElementById("thirdOffers").classList.toggle("-top-full");
+          document.getElementById("thirdOffers").classList.toggle("-top-[150%]");
 
           if (document.getElementById("firstOffers").classList.contains("top-0")) {
                document.getElementById("firstOffers").classList.remove("top-0");
-               document.getElementById("firstOffers").classList.add("-top-full");
+               document.getElementById("firstOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("secondOffers").classList.contains("top-0")) {
                document.getElementById("secondOffers").classList.remove("top-0");
-               document.getElementById("secondOffers").classList.add("-top-full");
+               document.getElementById("secondOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("fourthOffers").classList.contains("top-0")) {
                document.getElementById("fourthOffers").classList.remove("top-0");
-               document.getElementById("fourthOffers").classList.add("-top-full");
+               document.getElementById("fourthOffers").classList.add("-top-[150%]");
           }
      }
 
      const openFourthOffers = () => {
           document.getElementById("fourthOffers").classList.toggle("top-0");
-          document.getElementById("fourthOffers").classList.toggle("-top-full");
+          document.getElementById("fourthOffers").classList.toggle("-top-[150%]");
 
           if (document.getElementById("firstOffers").classList.contains("top-0")) {
                document.getElementById("firstOffers").classList.remove("top-0");
-               document.getElementById("firstOffers").classList.add("-top-full");
+               document.getElementById("firstOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("secondOffers").classList.contains("top-0")) {
                document.getElementById("secondOffers").classList.remove("top-0");
-               document.getElementById("secondOffers").classList.add("-top-full");
+               document.getElementById("secondOffers").classList.add("-top-[150%]");
           }
 
           if (document.getElementById("thirdOffers").classList.contains("top-0")) {
                document.getElementById("thirdOffers").classList.remove("top-0");
-               document.getElementById("thirdOffers").classList.add("-top-full");
+               document.getElementById("thirdOffers").classList.add("-top-[150%]");
           }
+     }
+
+     const openLocation = () => {
+          document.getElementById("bgDiv").classList.remove("-top-[150%]");
+          document.getElementById("bgDiv").classList.add("top-0");
+          document.getElementById("locationDiv").classList.remove("-top-[150%]");
+          document.getElementById("locationDiv").classList.add("top-0");
+     }
+
+     const closeLocation = () => {
+          document.getElementById("bgDiv").classList.add("-top-[150%]");
+          document.getElementById("bgDiv").classList.remove("top-0");
+          document.getElementById("locationDiv").classList.add("-top-[150%]");
+          document.getElementById("locationDiv").classList.remove("top-0");
      }
 
      return (
           <div className='relative'>
-               <div className='flex items-center justify-around py-4 px-5'>
+               <div className='flex items-center justify-between md:justify-around py-4 px-5'>
                     <svg width="30" height="30" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={openSidemenu} className='cursor-pointer'>
                          <mask id="mask0_669_725" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="0" y="0" width="53" height="30">
                               <rect x="0.994141" y="0.0234375" width="51.3466" height="29.955" fill="#D9D9D9" />
@@ -140,8 +156,8 @@ const Navbar = () => {
                               <path d="M48.895 25.0454C47.0871 25.4689 45.2658 25.7603 43.4417 26.0109L42.0723 26.1856L40.7018 26.3228C39.7871 26.4216 38.8712 26.483 37.9584 26.5222C36.1256 26.6073 34.2917 26.5777 32.4616 26.6121C31.5469 26.6193 30.6309 26.6663 29.7148 26.6989C28.7985 26.7029 27.8841 26.7532 26.9688 26.7803C26.5112 26.801 26.0527 26.8129 25.5957 26.8138C25.138 26.8202 24.6793 26.8177 24.2207 26.8153L22.8448 26.808C22.3862 26.8056 21.9264 26.7656 21.4701 26.7466C20.5532 26.6932 19.6374 26.6629 18.7187 26.5918C17.8023 26.5042 16.8882 26.3999 15.9734 26.3012C12.3259 25.7748 8.67663 24.9703 5.17078 23.4924C5.15693 23.4861 5.14535 23.4631 5.15247 23.442C5.15717 23.4231 5.17166 23.4097 5.18628 23.4105C8.7811 24.3958 12.4002 25.0066 16.0316 25.4515C19.6649 25.9285 23.3169 26.1325 26.973 26.3376C27.8855 26.3613 28.8007 26.4115 29.7163 26.4131C30.6311 26.4058 31.5449 26.3898 32.4617 26.3516C33.3771 26.3245 34.2885 26.2191 35.2009 26.1368L36.5683 26.0074L37.9363 25.8581C41.5843 25.5258 45.2353 25.2487 48.8935 24.9648C48.9105 24.9634 48.9228 24.9809 48.9263 25.0018C48.9256 25.0217 48.9169 25.0395 48.9015 25.0441L48.895 25.0454Z" fill="#F8FBFC" fillOpacity="0.3" />
                          </g>
                     </svg>
-                    <div className='flex items-center justify-between relative '>
-                         <input type="text" placeholder='Search retailor or website name' className='outline-none border-none p-1.5 pl-3 rounded-full w-96 text-xs shadow-[inset_0_4px_4px_0px_rgba(0,0,0,0.05)]' />
+                    <div className='flex items-center justify-between relative'>
+                         <input type="text" placeholder='Search retailor or website name' className='outline-none border-none p-1.5 pl-3 rounded-full w-52 md:w-96 text-xs shadow-[inset_0_4px_4px_0px_rgba(0,0,0,0.05)]' />
                          <button className='absolute bg-darkBlue p-1.5 right-0 rounded-r-full outline-none border-none'>
                               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M6.08844 0.583984C9.00198 0.583984 11.3674 2.93742 11.368 5.83596C11.3686 8.75585 9.01481 11.1111 6.09823 11.1093C3.17491 11.1078 0.824766 8.75677 0.828129 5.83779C0.831491 2.93956 3.18989 0.583984 6.08844 0.583984ZM6.09823 1.3293C3.61786 1.32197 1.57646 3.33999 1.56943 5.80574C1.5624 8.32063 3.56681 10.3591 6.05818 10.3704C8.57126 10.3817 10.6154 8.37313 10.6246 5.88326C10.6341 3.35677 8.62598 1.33632 6.09823 1.32899V1.3293Z" fill="#FFA412" />
@@ -150,37 +166,34 @@ const Navbar = () => {
                               </svg>
                          </button>
                     </div>
-                    <div className='w-[135px] h-[75px]'>
-                         <img src={logo} className='w-full h-full' />
+                    <div className='md:w-[135px] md:h-[75px] w-[50px] h-[50px]'>
+                         <img src={logo} className='w-full h-full hidden md:block' />
+                         <img src='https://www.w3schools.com/howto/img_avatar.png' className='w-full h-full rounded-full block md:hidden' />
                     </div>
-                    <div className='flex items-center justify-center p-1.5 border-dashed border-[1px] border-[#1A477A] rounded-md'>
-                         <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" className='mr-3'>
+                    <div className='md:flex hidden items-center justify-center p-1.5 border-dashed border-[1px] border-[#1A477A] rounded-md cursor-pointer' onClick={openLocation}>
+                         <svg width="15" height="15" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" className='mr-2'>
                               <path d="M11.1854 20.1355V17.7064C11.827 17.63 12.4534 17.4583 13.0645 17.1912C13.6756 16.9235 14.2638 16.5758 14.8291 16.148L16.5937 17.9126C15.7992 18.5543 14.9397 19.0661 14.0151 19.448C13.0911 19.83 12.1479 20.0592 11.1854 20.1355ZM17.877 16.5376L16.1812 14.8418C16.5784 14.3376 16.9032 13.776 17.1556 13.157C17.4074 12.5385 17.5791 11.8855 17.6708 11.198H20.1687C20.0312 12.2675 19.7715 13.2529 19.3895 14.1543C19.0076 15.0557 18.5034 15.8501 17.877 16.5376ZM17.6708 9.3418C17.5791 8.6543 17.4074 8.00102 17.1556 7.38196C16.9032 6.76352 16.5784 6.20221 16.1812 5.69805L17.877 3.9793C18.5187 4.6668 19.0421 5.4918 19.4473 6.4543C19.8518 7.4168 20.0923 8.3793 20.1687 9.3418H17.6708ZM9.30619 20.1355C6.7548 19.83 4.63119 18.7416 2.93535 16.8704C1.23952 14.9985 0.391602 12.8022 0.391602 10.2814C0.391602 7.71471 1.23952 5.49546 2.93535 3.62363C4.63119 1.75241 6.7548 0.679297 9.30619 0.404297V2.83346C7.4423 3.09319 5.89527 3.92582 4.6651 5.33138C3.43555 6.73694 2.82077 8.38694 2.82077 10.2814C2.82077 12.1453 3.43555 13.78 4.6651 15.1855C5.89527 16.5911 7.4423 17.4314 9.30619 17.7064V20.1355ZM14.8749 4.36888C14.3097 3.95638 13.7138 3.62027 13.0874 3.36055C12.461 3.10082 11.8194 2.92513 11.1624 2.83346V0.404297C12.1555 0.480686 13.1143 0.709852 14.0389 1.0918C14.9629 1.47374 15.8145 1.98555 16.5937 2.62721L14.8749 4.36888ZM10.2916 16.0335C8.80966 14.7501 7.70202 13.5661 6.96869 12.4814C6.23535 11.3967 5.86869 10.396 5.86869 9.4793C5.86869 8.08902 6.31571 6.98138 7.20977 6.15638C8.10321 5.33138 9.13049 4.91888 10.2916 4.91888C11.4527 4.91888 12.4803 5.33138 13.3744 6.15638C14.2678 6.98138 14.7145 8.08902 14.7145 9.4793C14.7145 10.396 14.3479 11.3967 13.6145 12.4814C12.8812 13.5661 11.7735 14.7501 10.2916 16.0335ZM10.2916 10.5105C10.6277 10.5105 10.9104 10.3923 11.1395 10.1558C11.3687 9.91868 11.4833 9.63971 11.4833 9.31888C11.4833 8.99805 11.3687 8.71907 11.1395 8.48196C10.9104 8.24546 10.6277 8.12721 10.2916 8.12721C9.97077 8.12721 9.6921 8.24546 9.4556 8.48196C9.21849 8.71907 9.09994 8.99805 9.09994 9.31888C9.09994 9.63971 9.21849 9.91868 9.4556 10.1558C9.6921 10.3923 9.97077 10.5105 10.2916 10.5105Z" fill="#FFA412" />
                          </svg>
-                         <div className='flex items-center justify-center'>
-                              <input type="text" placeholder='Click To Select Your Address' className='text-xs mr-2 outline-none border-none' />
-                              <button>
-                                   <svg width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.17439 10.8932C3.21384 10.2049 3.24908 9.51644 3.2972 8.82876C3.30419 8.73044 3.35399 8.62185 3.41581 8.54241C5.11357 6.35468 6.81524 4.16973 8.51636 1.9845C8.63021 1.83813 8.74239 1.69037 8.85848 1.54539C9.59169 0.628585 10.916 0.454722 11.864 1.15101C12.0738 1.30515 12.2817 1.46152 12.4884 1.61955C13.4773 2.37472 13.6541 3.70702 12.8896 4.69021C11.537 6.42967 10.1803 8.1658 8.82519 9.90332C8.386 10.4666 7.94876 11.0318 7.50453 11.5911C7.44131 11.6708 7.35151 11.745 7.25807 11.7836C6.05378 12.2788 4.84697 12.7676 3.64016 13.257C3.2916 13.3984 3.04375 13.2234 3.06361 12.8473C3.09802 12.1958 3.13747 11.5445 3.17439 10.8932ZM8.59217 3.12016C7.12212 5.00877 5.66242 6.88405 4.19825 8.76544C5.16672 9.48644 6.11924 10.1955 7.07848 10.9096C8.54573 9.02845 10.0026 7.16095 11.4654 5.28595C10.5056 4.56245 9.55644 3.847 8.59217 3.12016ZM11.9303 4.68965C12.071 4.50857 12.2098 4.34081 12.3365 4.16473C12.7791 3.54982 12.6624 2.72078 12.0666 2.24973C11.8442 2.07393 11.6176 1.9034 11.3865 1.73953C10.8489 1.35764 10.0963 1.39375 9.62106 1.84424C9.41125 2.0431 9.24341 2.28528 9.04843 2.51747C10.0152 3.24625 10.9641 3.96143 11.9303 4.68965ZM4.01054 9.56865C3.95627 10.5085 3.90368 11.4214 3.84969 12.358C4.69787 12.013 5.52787 11.6758 6.37689 11.3306C5.58074 10.7376 4.81005 10.1638 4.01054 9.56865Z" fill="#FFA412" />
-                                        <path d="M7.99429 14.5239C10.2921 14.5239 12.5896 14.5239 14.8874 14.5239C15.154 14.5239 15.3168 14.6617 15.3222 14.8883C15.3269 15.0911 15.182 15.2544 14.9783 15.2733C14.9274 15.278 14.876 15.2755 14.8248 15.2755C10.2666 15.2755 5.70852 15.2755 1.15039 15.2755C1.09444 15.2755 1.03793 15.2783 0.982826 15.2716C0.785887 15.2477 0.647974 15.0858 0.65245 14.8883C0.656925 14.6917 0.80379 14.5392 1.00353 14.5253C1.04521 14.5225 1.08745 14.5237 1.12941 14.5237C3.41771 14.5237 5.70628 14.5237 7.99457 14.5237L7.99429 14.5239Z" fill="#FFA412" />
-                                   </svg>
-                              </button>
-                         </div>
+                         <p className='text-xs text-[#1A477A] font-medium mr-2 outline-none border-none'>Click To Select Your Address</p>
+                         <svg width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.17439 10.8932C3.21384 10.2049 3.24908 9.51644 3.2972 8.82876C3.30419 8.73044 3.35399 8.62185 3.41581 8.54241C5.11357 6.35468 6.81524 4.16973 8.51636 1.9845C8.63021 1.83813 8.74239 1.69037 8.85848 1.54539C9.59169 0.628585 10.916 0.454722 11.864 1.15101C12.0738 1.30515 12.2817 1.46152 12.4884 1.61955C13.4773 2.37472 13.6541 3.70702 12.8896 4.69021C11.537 6.42967 10.1803 8.1658 8.82519 9.90332C8.386 10.4666 7.94876 11.0318 7.50453 11.5911C7.44131 11.6708 7.35151 11.745 7.25807 11.7836C6.05378 12.2788 4.84697 12.7676 3.64016 13.257C3.2916 13.3984 3.04375 13.2234 3.06361 12.8473C3.09802 12.1958 3.13747 11.5445 3.17439 10.8932ZM8.59217 3.12016C7.12212 5.00877 5.66242 6.88405 4.19825 8.76544C5.16672 9.48644 6.11924 10.1955 7.07848 10.9096C8.54573 9.02845 10.0026 7.16095 11.4654 5.28595C10.5056 4.56245 9.55644 3.847 8.59217 3.12016ZM11.9303 4.68965C12.071 4.50857 12.2098 4.34081 12.3365 4.16473C12.7791 3.54982 12.6624 2.72078 12.0666 2.24973C11.8442 2.07393 11.6176 1.9034 11.3865 1.73953C10.8489 1.35764 10.0963 1.39375 9.62106 1.84424C9.41125 2.0431 9.24341 2.28528 9.04843 2.51747C10.0152 3.24625 10.9641 3.96143 11.9303 4.68965ZM4.01054 9.56865C3.95627 10.5085 3.90368 11.4214 3.84969 12.358C4.69787 12.013 5.52787 11.6758 6.37689 11.3306C5.58074 10.7376 4.81005 10.1638 4.01054 9.56865Z" fill="#FFA412" />
+                              <path d="M7.99429 14.5239C10.2921 14.5239 12.5896 14.5239 14.8874 14.5239C15.154 14.5239 15.3168 14.6617 15.3222 14.8883C15.3269 15.0911 15.182 15.2544 14.9783 15.2733C14.9274 15.278 14.876 15.2755 14.8248 15.2755C10.2666 15.2755 5.70852 15.2755 1.15039 15.2755C1.09444 15.2755 1.03793 15.2783 0.982826 15.2716C0.785887 15.2477 0.647974 15.0858 0.65245 14.8883C0.656925 14.6917 0.80379 14.5392 1.00353 14.5253C1.04521 14.5225 1.08745 14.5237 1.12941 14.5237C3.41771 14.5237 5.70628 14.5237 7.99457 14.5237L7.99429 14.5239Z" fill="#FFA412" />
+                         </svg>
                     </div>
-                    <div className='flex items-center justify-center'>
+                    <div className='md:flex items-center justify-center hidden'>
                          <svg width="15" height="15" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg" className='mr-3'>
                               <path d="M10.8283 18.8901C10.0949 18.3095 9.30445 17.8512 8.45684 17.5151C7.60862 17.179 6.71853 17.0109 5.78659 17.0109C5.14492 17.0109 4.52251 17.095 3.91934 17.263C3.31556 17.4311 2.73103 17.6679 2.16576 17.9734C1.81437 18.1568 1.46695 18.1491 1.12351 17.9505C0.77945 17.7519 0.607422 17.454 0.607422 17.0568V6.01094C0.607422 5.79705 0.657227 5.5908 0.756839 5.39219C0.855839 5.19358 1.00464 5.04844 1.20326 4.95677C1.92131 4.60538 2.66625 4.34169 3.43809 4.16569C4.20931 3.9903 4.99214 3.9026 5.78659 3.9026C6.6727 3.9026 7.54353 4.01719 8.39909 4.24635C9.25464 4.47552 10.0644 4.81927 10.8283 5.2776V16.5526C11.6074 16.0637 12.4248 15.6894 13.2803 15.4297C14.1359 15.17 14.9991 15.0401 15.8699 15.0401C16.4199 15.0401 16.9586 15.0859 17.486 15.1776C18.0128 15.2693 18.5435 15.4068 19.0783 15.5901V4.40677C19.3227 4.48316 19.5595 4.56322 19.7887 4.64694C20.0178 4.73127 20.2394 4.83455 20.4533 4.95677C20.6519 5.04844 20.801 5.19358 20.9006 5.39219C20.9996 5.5908 21.0491 5.79705 21.0491 6.01094V17.1026C21.0491 17.4998 20.8774 17.7901 20.5339 17.9734C20.1899 18.1568 19.8421 18.1568 19.4908 17.9734C18.9255 17.6679 18.3413 17.4311 17.7381 17.263C17.1343 17.095 16.5116 17.0109 15.8699 17.0109C14.938 17.0109 14.0482 17.179 13.2006 17.5151C12.3524 17.8512 11.5616 18.3095 10.8283 18.8901ZM12.6616 14.1693V5.2776L17.2449 0.648438V9.99844L12.6616 14.1693Z" fill="#FFA412" />
                          </svg>
                          <p className='text-xs'>How it Works</p>
                     </div>
-                    <div className='flex items-center justify-center'>
+                    <div className='md:flex hidden items-center justify-center'>
                          <svg width="15" height="15" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg" className='mr-3'>
                               <path d="M12.0754 13.4876C12.4294 13.4876 12.7289 13.3651 12.9739 13.12C13.219 12.875 13.3415 12.5755 13.3415 12.2215C13.3415 11.8675 13.219 11.568 12.9739 11.323C12.7289 11.0779 12.4294 10.9554 12.0754 10.9554C11.7214 10.9554 11.4219 11.0779 11.1769 11.323C10.9318 11.568 10.8093 11.8675 10.8093 12.2215C10.8093 12.5755 10.9318 12.875 11.1769 13.12C11.4219 13.3651 11.7214 13.4876 12.0754 13.4876ZM12.0754 15.9382C12.5111 15.9382 12.9091 15.8429 13.2696 15.6523C13.6307 15.4617 13.9269 15.203 14.1584 14.8763C13.8453 14.6857 13.5117 14.5427 13.1577 14.4474C12.8038 14.3521 12.443 14.3045 12.0754 14.3045C11.7078 14.3045 11.347 14.3521 10.9931 14.4474C10.6391 14.5427 10.3056 14.6857 9.99243 14.8763C10.2239 15.203 10.5198 15.4617 10.8803 15.6523C11.2414 15.8429 11.6397 15.9382 12.0754 15.9382ZM12.0754 18.1029C10.7821 18.1029 9.68284 17.6503 8.77777 16.7452C7.87215 15.8396 7.41934 14.7401 7.41934 13.4468C7.41934 12.1534 7.87215 11.054 8.77777 10.1483C9.68284 9.24326 10.7821 8.79072 12.0754 8.79072C13.3688 8.79072 14.4682 9.24326 15.3739 10.1483C16.2789 11.054 16.7315 12.1534 16.7315 13.4468C16.7315 14.7401 16.2789 15.8396 15.3739 16.7452C14.4682 17.6503 13.3688 18.1029 12.0754 18.1029ZM7.86861 18.1233C5.84009 17.6468 4.15873 16.4928 2.82453 14.6614C1.49034 12.8306 0.823242 10.792 0.823242 8.54567V3.11359L7.97071 0.417969L15.159 3.11359V7.97387C14.7234 7.70158 14.2297 7.49737 13.6781 7.36123C13.127 7.22508 12.5927 7.15701 12.0754 7.15701C10.3328 7.15701 8.84883 7.76965 7.62355 8.99493C6.39827 10.2202 5.78563 11.7042 5.78563 13.4468C5.78563 14.3317 5.96615 15.1861 6.3272 16.0101C6.68771 16.8335 7.20151 17.5379 7.86861 18.1233Z" fill="#FFA412" />
                          </svg>
                          <p className='text-xs'>Log In / Join Free</p>
                     </div>
                </div>
-               <div className='h-screen w-1/5 bg-darkBlue fixed top-0 -left-full transition-all duration-500 overflow-y-scroll no-scrollbar z-[999]' id='sidemenu'>
+               <div className='h-screen md:w-1/5 w-full bg-darkBlue fixed top-0 -left-full transition-all duration-500 overflow-y-scroll no-scrollbar z-[999]' id='sidemenu'>
                     <div className='flex items-center justify-between px-5 py-6'>
                          <p className='uppercase text-white font-semibold'>Category</p>
                          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={closeSidemenu} className='cursor-pointer'>
@@ -343,7 +356,7 @@ const Navbar = () => {
                                    <p className='text-xs leading-8 text-white'>DIAPERS</p>
                               </div>
                          </div>
-                         <div className='py-3 px-6 border-t border-[#0F3968] flex items-center justify-between'>
+                         <div className='py-3 px-6 border-t border-[#0F3968] flex items-center justify-between' onClick={openFourthOffers}>
                               <div className='flex items-center'>
                                    <svg width="20" height="20" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg" className='mr-3'>
                                         <path d="M2.51196 7.5446C1.87599 8.17267 1.25995 8.79024 0.631507 9.39556C0.44417 9.57619 0.347622 9.77039 0.427783 10.0184C0.509272 10.2703 0.686423 10.4321 0.952593 10.5008C1.16429 10.5555 1.32505 10.482 1.46987 10.339C2.06421 9.75114 2.6652 9.16944 3.25024 8.57286C3.39816 8.42197 3.49559 8.41628 3.67363 8.52694C6.37341 10.2069 10.0054 8.6096 10.5462 5.51038C10.9718 3.07203 9.44476 0.839244 6.98502 0.302588C4.48587 -0.242815 1.93578 1.49574 1.56775 3.9962C1.38528 5.23527 1.6519 6.36632 2.39991 7.38233C2.43402 7.4287 2.46546 7.47724 2.51152 7.54416L2.51196 7.5446ZM6.07092 1.46381C7.89336 1.47431 9.36815 2.9312 9.36416 4.71611C9.36017 6.49403 7.85661 7.97191 6.05719 7.96623C4.25203 7.96054 2.74757 6.46823 2.7675 4.70299C2.78787 2.89402 4.25778 1.45288 6.07092 1.46381Z" fill="#FFA412" />
@@ -351,7 +364,7 @@ const Navbar = () => {
                                         <path d="M14.3501 7.97016C13.4355 7.97016 12.5214 7.96929 11.6069 7.9706C11.2459 7.97104 11.1025 8.11581 11.0998 8.47358C11.0945 9.13401 11.1786 9.21799 11.8425 9.21799C13.5679 9.21799 15.2934 9.21799 17.0188 9.21799C17.4648 9.21799 17.5928 9.08984 17.5946 8.64634C17.5946 8.59517 17.5946 8.54443 17.5946 8.49326C17.5919 8.08957 17.4741 7.9706 17.0711 7.97016C16.1641 7.96929 15.2571 7.97016 14.3501 7.97016Z" fill="#FFA412" />
                                         <path d="M14.7921 2.31319C15.5516 2.31319 16.3116 2.31406 17.0711 2.31319C17.4719 2.31231 17.5919 2.19072 17.5946 1.78878C17.595 1.72317 17.595 1.65757 17.5946 1.59196C17.5915 1.20358 17.4546 1.06668 17.0654 1.06624C16.0547 1.06537 15.0445 1.06624 14.0339 1.06624C13.5175 1.06624 13.0011 1.06493 12.4851 1.06668C12.1361 1.06799 11.9855 1.21582 11.982 1.55479C11.9736 2.26508 12.0214 2.31319 12.7349 2.31319C13.4209 2.31319 14.1065 2.31319 14.7921 2.31319Z" fill="#FFA412" />
                                    </svg>
-                                   <p className='text-xs leading-8 text-white cursor-pointer' onClick={openFourthOffers}>SEE ALL THE CATEGORIES</p>
+                                   <p className='text-xs leading-8 text-white cursor-pointer'>SEE ALL THE CATEGORIES</p>
                               </div>
                               <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M1.35938 1.11426L7.42676 7.18164L1.35938 13.249" stroke="#FFA412" stroke-width="2" stroke-linecap="round" />
@@ -382,7 +395,12 @@ const Navbar = () => {
                          </div>
                     </div>
                </div>
-               <div className='flex items-start justify-around bg-white py-4 fixed w-4/5 -top-full left-[20%] shadow-md transition-all duration-500 z-[999]' id='firstOffers'>
+               <div className='md:flex flex-col md:flex-row md:px-0 px-4 items-start justify-between md:justify-around bg-white py-4 fixed md:w-4/5 w-full h-screen md:h-auto overflow-scroll md:overflow-hidden -top-[150%] md:left-[20%] left-0 shadow-md transition-all duration-500 z-[999]' id='firstOffers'>
+                    <div className="sticky h-5 w-5 top-0 right-4 md:hidden ml-[95%]">
+                         <svg width="15" height="15" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg"  onClick={openFirstOffers} >
+                              <path d="M1.80243 1.85156L18.0237 18.3174M1.55762 18.3174L18.0234 2.09608" stroke="#1A477A" stroke-width="2" stroke-linecap="round" />
+                         </svg>
+                    </div>
                     <div className='flex flex-col items-start'>
                          <div className='mb-3'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>department store</h1>
@@ -474,7 +492,7 @@ const Navbar = () => {
                               </ul>
                          </div>
                     </div>
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col items-start md:items-center'>
                          <div className='mb-3'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>LINGERIE</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
@@ -490,7 +508,12 @@ const Navbar = () => {
                          </div>
                     </div>
                </div>
-               <div className='flex items-start justify-around bg-white py-4 fixed w-4/5 -top-full left-[20%] shadow-md transition-all duration-500 z-[999]' id='secondOffers'>
+               <div className='md:flex flex-col md:flex-row md:px-0 px-4 items-start justify-between md:justify-around bg-white py-4 fixed md:w-4/5 w-full h-screen md:h-auto overflow-scroll md:overflow-hidden -top-[150%] md:left-[20%] left-0 shadow-md transition-all duration-500 z-[999]' id='secondOffers'>
+                    <div className="sticky h-5 w-5 top-0 right-4 md:hidden ml-[95%]">
+                         <svg width="15" height="15" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg"  onClick={openSecondOffers} >
+                              <path d="M1.80243 1.85156L18.0237 18.3174M1.55762 18.3174L18.0234 2.09608" stroke="#1A477A" stroke-width="2" stroke-linecap="round" />
+                         </svg>
+                    </div>
                     <div className='flex flex-col items-start'>
                          <div className='mb-3'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>HIGEST CASHBACK STORE</h1>
@@ -575,7 +598,7 @@ const Navbar = () => {
                               </ul>
                          </div>
                     </div>
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col md:items-center items-start'>
                          <div className='mb-3'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>travel</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
@@ -591,20 +614,25 @@ const Navbar = () => {
                          </div>
                     </div>
                </div>
-               <div className='flex items-start justify-around bg-white py-4 fixed w-4/5 -top-full left-[20%] shadow-md transition-all duration-500 z-[999]' id='thirdOffers'>
+               <div className='md:flex flex-col md:flex-row md:px-0 px-4 items-start justify-between md:justify-around bg-white py-4 fixed md:w-4/5 w-full h-screen md:h-auto overflow-scroll md:overflow-hidden -top-[150%] md:left-[20%] left-0 shadow-md transition-all duration-500 z-[999]' id='thirdOffers'>
+                    <div className="sticky h-5 w-5 top-0 right-4 md:hidden ml-[95%]">
+                         <svg width="15" height="15" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg"  onClick={openThirdOffers} >
+                              <path d="M1.80243 1.85156L18.0237 18.3174M1.55762 18.3174L18.0234 2.09608" stroke="#1A477A" stroke-width="2" stroke-linecap="round" />
+                         </svg>
+                    </div>
                     <div className='flex flex-col items-start'>
                          <div className='mb-3 w-[200px] h-[150px]'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>AJIO SPECIAL OFFER</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[140px] h-[80px] m-auto'>
-                                   <img src={Ajio} className='w-full h-full'/>
+                                   <img src={Ajio} className='w-full h-full' />
                               </div>
                          </div>
                          <div className='w-[200px] h-[150px]'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>MAMAEarth best sellers</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[150px] h-[50px] m-auto'>
-                                   <img src={mamaearth} className='w-full h-full'/>
+                                   <img src={mamaearth} className='w-full h-full' />
                               </div>
                          </div>
                     </div>
@@ -613,14 +641,14 @@ const Navbar = () => {
                               <h1 className='uppercase text-[#1A477A] font-semibold'>NEW ON TIGER.LIVE</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[170px] h-[100px] m-auto'>
-                                   <img src={logo} className='w-full h-full'/>
+                                   <img src={logo} className='w-full h-full' />
                               </div>
                          </div>
                          <div className='w-[150px] h-[150px]'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>Best travel offer</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[100px] h-[90px] m-auto'>
-                                   <img src={travel} className='w-full h-full'/>
+                                   <img src={travel} className='w-full h-full' />
                               </div>
                          </div>
                     </div>
@@ -629,14 +657,14 @@ const Navbar = () => {
                               <h1 className='uppercase text-[#1A477A] font-semibold'>Flash Deals</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[120px] h-[80px] m-auto'>
-                                   <img src={flashdeal} className='w-full h-full'/>
+                                   <img src={flashdeal} className='w-full h-full' />
                               </div>
                          </div>
                          <div className='w-[200px] h-[150px]'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>PHARMEASY BEST OFFERS</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[100px] h-[100px] m-auto'>
-                                   <img src={pharmeasy} className='w-full h-full'/>
+                                   <img src={pharmeasy} className='w-full h-full' />
                               </div>
                          </div>
                     </div>
@@ -645,23 +673,23 @@ const Navbar = () => {
                               <h1 className='uppercase text-[#1A477A] font-semibold'>MYNTRA BEST OFFERS</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[130px] h-[60px] m-auto'>
-                                   <img src={Myntra} className='w-full h-full'/>
+                                   <img src={Myntra} className='w-full h-full' />
                               </div>
                          </div>
                          <div className='w-[200px] h-[150px]'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>FLIPKART BIG SAVING OFFERS</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[140px] h-[50px] m-auto'>
-                                   <img src={flipkart} className='w-full h-full'/>
+                                   <img src={flipkart} className='w-full h-full' />
                               </div>
                          </div>
                     </div>
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col md:items-center items-start'>
                          <div className='mb-3 w-[200px] h-[150px]'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>100% Saving Offers</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
                               <div className='w-[100px] h-[100px] m-auto'>
-                                   <img src={savingoffers} className='w-full h-full'/>
+                                   <img src={savingoffers} className='w-full h-full' />
                               </div>
                          </div>
                          <div className='flex items-center justify-center'>
@@ -669,7 +697,12 @@ const Navbar = () => {
                          </div>
                     </div>
                </div>
-               <div className='flex items-start justify-around bg-white py-4 fixed w-4/5 -top-full left-[20%] shadow-md transition-all duration-500 z-[999]' id='fourthOffers'>
+               <div className='md:flex flex-col md:flex-row md:px-0 px-4 items-start justify-between md:justify-around bg-white py-4 fixed md:w-4/5 w-full h-screen md:h-auto overflow-scroll md:overflow-hidden -top-[150%] md:left-[20%] left-0 shadow-md transition-all duration-500 z-[999]' id='fourthOffers'>
+                    <div className="sticky h-5 w-5 top-0 right-4 md:hidden ml-[95%]">
+                         <svg width="15" height="15" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg"  onClick={openFourthOffers} >
+                              <path d="M1.80243 1.85156L18.0237 18.3174M1.55762 18.3174L18.0234 2.09608" stroke="#1A477A" stroke-width="2" stroke-linecap="round" />
+                         </svg>
+                    </div>
                     <div className='flex flex-col items-start'>
                          <div className='mb-3 w-[200px]'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>CLOTHING & FOOTWEAR DEALS</h1>
@@ -768,7 +801,7 @@ const Navbar = () => {
                               </ul>
                          </div>
                     </div>
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col md:items-center items-start'>
                          <div className='mb-3'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>Women Clothings</h1>
                               <div className='bg-darkYellow w-1/2 h-[2px] my-1'></div>
@@ -783,6 +816,39 @@ const Navbar = () => {
                          </div>
                          <div className='flex items-center justify-center'>
                               <h1 className='uppercase text-[#1A477A] font-semibold'>View ALL</h1>
+                         </div>
+                    </div>
+               </div>
+               <div className='w-screen h-screen bg-black/50 fixed -top-[150%] z-[999] flex items-center justify-center' id='bgDiv'>
+                    <div className='w-1/2 bg-[#1861AA] rounded-md flex items-center justify-between relative -top-[150%] transition-all duration-500' id='locationDiv'>
+                         <div className='w-[50%] h-full'>
+                              <img src={map} className='w-full h-full object-cover' />
+                         </div>
+                         <div className='text-white pb-10 pt-14 flex flex-col items-center justify-between m-auto'>
+                              <div className='max-w-[70%]'>
+                                   <h1 className='text-2xl font-medium'>Choose Your Location</h1>
+                                   <p className='text-base font-light capitalize tracking-widest mt-5'>Select a delivery locaion to see product availabity and delivery options</p>
+                              </div>
+                              <div className='px-7 w-full my-5'>
+                                   <button className='bg-darkYellow w-full p-2 pl-6 text-left rounded-full shadow-[inset_0_2px_2px_rgba(0,0,0,0.25)] text-base font-medium'>Sign in See your Addresses</button>
+                                   <div className='flex items-center justify-evenly my-3'>
+                                        <p>or enter an indian pincode</p>
+                                        <svg width="150" height="10" viewBox="0 0 146 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M140.062 2.89404C140.062 4.3668 141.256 5.56071 142.729 5.56071C144.201 5.56071 145.395 4.3668 145.395 2.89404C145.395 1.42128 144.201 0.227376 142.729 0.227376C141.256 0.227376 140.062 1.42128 140.062 2.89404ZM0.541992 2.39404C0.26585 2.39404 0.0419922 2.6179 0.0419922 2.89404C0.0419922 3.17019 0.26585 3.39404 0.541992 3.39404V2.39404ZM1.5294 3.39404C1.80554 3.39404 2.0294 3.17019 2.0294 2.89404C2.0294 2.6179 1.80554 2.39404 1.5294 2.39404V3.39404ZM3.50421 2.39404C3.22807 2.39404 3.00421 2.6179 3.00421 2.89404C3.00421 3.17019 3.22807 3.39404 3.50421 3.39404V2.39404ZM5.47902 3.39404C5.75517 3.39404 5.97902 3.17019 5.97902 2.89404C5.97902 2.6179 5.75517 2.39404 5.47902 2.39404V3.39404ZM7.45384 2.39404C7.17769 2.39404 6.95384 2.6179 6.95384 2.89404C6.95384 3.17019 7.17769 3.39404 7.45384 3.39404V2.39404ZM9.42865 3.39404C9.70479 3.39404 9.92865 3.17019 9.92865 2.89404C9.92865 2.6179 9.70479 2.39404 9.42865 2.39404V3.39404ZM11.4035 2.39404C11.1273 2.39404 10.9035 2.6179 10.9035 2.89404C10.9035 3.17019 11.1273 3.39404 11.4035 3.39404V2.39404ZM13.3783 3.39404C13.6544 3.39404 13.8783 3.17019 13.8783 2.89404C13.8783 2.6179 13.6544 2.39404 13.3783 2.39404V3.39404ZM15.3531 2.39404C15.0769 2.39404 14.8531 2.6179 14.8531 2.89404C14.8531 3.17019 15.0769 3.39404 15.3531 3.39404V2.39404ZM17.3279 3.39404C17.604 3.39404 17.8279 3.17019 17.8279 2.89404C17.8279 2.6179 17.604 2.39404 17.3279 2.39404V3.39404ZM19.3027 2.39404C19.0266 2.39404 18.8027 2.6179 18.8027 2.89404C18.8027 3.17019 19.0266 3.39404 19.3027 3.39404V2.39404ZM21.2775 3.39404C21.5537 3.39404 21.7775 3.17019 21.7775 2.89404C21.7775 2.6179 21.5537 2.39404 21.2775 2.39404V3.39404ZM23.2523 2.39404C22.9762 2.39404 22.7523 2.6179 22.7523 2.89404C22.7523 3.17019 22.9762 3.39404 23.2523 3.39404V2.39404ZM25.2272 3.39404C25.5033 3.39404 25.7272 3.17019 25.7272 2.89404C25.7272 2.6179 25.5033 2.39404 25.2272 2.39404V3.39404ZM27.202 2.39404C26.9258 2.39404 26.702 2.6179 26.702 2.89404C26.702 3.17019 26.9258 3.39404 27.202 3.39404V2.39404ZM29.1768 3.39404C29.4529 3.39404 29.6768 3.17019 29.6768 2.89404C29.6768 2.6179 29.4529 2.39404 29.1768 2.39404V3.39404ZM31.1516 2.39404C30.8755 2.39404 30.6516 2.6179 30.6516 2.89404C30.6516 3.17019 30.8755 3.39404 31.1516 3.39404V2.39404ZM33.1264 3.39404C33.4025 3.39404 33.6264 3.17019 33.6264 2.89404C33.6264 2.6179 33.4025 2.39404 33.1264 2.39404V3.39404ZM35.1012 2.39404C34.8251 2.39404 34.6012 2.6179 34.6012 2.89404C34.6012 3.17019 34.8251 3.39404 35.1012 3.39404V2.39404ZM37.076 3.39404C37.3522 3.39404 37.576 3.17019 37.576 2.89404C37.576 2.6179 37.3522 2.39404 37.076 2.39404V3.39404ZM39.0508 2.39404C38.7747 2.39404 38.5508 2.6179 38.5508 2.89404C38.5508 3.17019 38.7747 3.39404 39.0508 3.39404V2.39404ZM41.0257 3.39404C41.3018 3.39404 41.5257 3.17019 41.5257 2.89404C41.5257 2.6179 41.3018 2.39404 41.0257 2.39404V3.39404ZM43.0005 2.39404C42.7243 2.39404 42.5005 2.6179 42.5005 2.89404C42.5005 3.17019 42.7243 3.39404 43.0005 3.39404V2.39404ZM44.9753 3.39404C45.2514 3.39404 45.4753 3.17019 45.4753 2.89404C45.4753 2.6179 45.2514 2.39404 44.9753 2.39404V3.39404ZM46.9501 2.39404C46.674 2.39404 46.4501 2.6179 46.4501 2.89404C46.4501 3.17019 46.674 3.39404 46.9501 3.39404V2.39404ZM48.9249 3.39404C49.201 3.39404 49.4249 3.17019 49.4249 2.89404C49.4249 2.6179 49.201 2.39404 48.9249 2.39404V3.39404ZM50.8997 2.39404C50.6236 2.39404 50.3997 2.6179 50.3997 2.89404C50.3997 3.17019 50.6236 3.39404 50.8997 3.39404V2.39404ZM52.8745 3.39404C53.1507 3.39404 53.3745 3.17019 53.3745 2.89404C53.3745 2.6179 53.1507 2.39404 52.8745 2.39404V3.39404ZM54.8493 2.39404C54.5732 2.39404 54.3493 2.6179 54.3493 2.89404C54.3493 3.17019 54.5732 3.39404 54.8493 3.39404V2.39404ZM56.8241 3.39404C57.1003 3.39404 57.3241 3.17019 57.3241 2.89404C57.3241 2.6179 57.1003 2.39404 56.8241 2.39404V3.39404ZM58.799 2.39404C58.5228 2.39404 58.299 2.6179 58.299 2.89404C58.299 3.17019 58.5228 3.39404 58.799 3.39404V2.39404ZM60.7738 3.39404C61.0499 3.39404 61.2738 3.17019 61.2738 2.89404C61.2738 2.6179 61.0499 2.39404 60.7738 2.39404V3.39404ZM62.7486 2.39404C62.4724 2.39404 62.2486 2.6179 62.2486 2.89404C62.2486 3.17019 62.4724 3.39404 62.7486 3.39404V2.39404ZM64.7234 3.39404C64.9995 3.39404 65.2234 3.17019 65.2234 2.89404C65.2234 2.6179 64.9995 2.39404 64.7234 2.39404V3.39404ZM66.6982 2.39404C66.4221 2.39404 66.1982 2.6179 66.1982 2.89404C66.1982 3.17019 66.4221 3.39404 66.6982 3.39404V2.39404ZM68.673 3.39404C68.9492 3.39404 69.173 3.17019 69.173 2.89404C69.173 2.6179 68.9492 2.39404 68.673 2.39404V3.39404ZM70.6478 2.39404C70.3717 2.39404 70.1478 2.6179 70.1478 2.89404C70.1478 3.17019 70.3717 3.39404 70.6478 3.39404V2.39404ZM72.6227 3.39404C72.8988 3.39404 73.1227 3.17019 73.1227 2.89404C73.1227 2.6179 72.8988 2.39404 72.6227 2.39404V3.39404ZM74.5975 2.39404C74.3213 2.39404 74.0975 2.6179 74.0975 2.89404C74.0975 3.17019 74.3213 3.39404 74.5975 3.39404V2.39404ZM76.5723 3.39404C76.8484 3.39404 77.0723 3.17019 77.0723 2.89404C77.0723 2.6179 76.8484 2.39404 76.5723 2.39404V3.39404ZM78.5471 2.39404C78.271 2.39404 78.0471 2.6179 78.0471 2.89404C78.0471 3.17019 78.271 3.39404 78.5471 3.39404V2.39404ZM80.5219 3.39404C80.7981 3.39404 81.0219 3.17019 81.0219 2.89404C81.0219 2.6179 80.7981 2.39404 80.5219 2.39404V3.39404ZM82.4967 2.39404C82.2206 2.39404 81.9967 2.6179 81.9967 2.89404C81.9967 3.17019 82.2206 3.39404 82.4967 3.39404V2.39404ZM84.4715 3.39404C84.7477 3.39404 84.9715 3.17019 84.9715 2.89404C84.9715 2.6179 84.7477 2.39404 84.4715 2.39404V3.39404ZM86.4464 2.39404C86.1702 2.39404 85.9464 2.6179 85.9464 2.89404C85.9464 3.17019 86.1702 3.39404 86.4464 3.39404V2.39404ZM88.4212 3.39404C88.6973 3.39404 88.9212 3.17019 88.9212 2.89404C88.9212 2.6179 88.6973 2.39404 88.4212 2.39404V3.39404ZM90.396 2.39404C90.1199 2.39404 89.896 2.6179 89.896 2.89404C89.896 3.17019 90.1199 3.39404 90.396 3.39404V2.39404ZM92.3708 3.39404C92.647 3.39404 92.8708 3.17019 92.8708 2.89404C92.8708 2.6179 92.647 2.39404 92.3708 2.39404V3.39404ZM94.3456 2.39404C94.0695 2.39404 93.8456 2.6179 93.8456 2.89404C93.8456 3.17019 94.0695 3.39404 94.3456 3.39404V2.39404ZM96.3204 3.39404C96.5966 3.39404 96.8204 3.17019 96.8204 2.89404C96.8204 2.6179 96.5966 2.39404 96.3204 2.39404V3.39404ZM98.2953 2.39404C98.0191 2.39404 97.7953 2.6179 97.7953 2.89404C97.7953 3.17019 98.0191 3.39404 98.2953 3.39404V2.39404ZM100.27 3.39404C100.546 3.39404 100.77 3.17019 100.77 2.89404C100.77 2.6179 100.546 2.39404 100.27 2.39404V3.39404ZM102.245 2.39404C101.969 2.39404 101.745 2.6179 101.745 2.89404C101.745 3.17019 101.969 3.39404 102.245 3.39404V2.39404ZM104.22 3.39404C104.496 3.39404 104.72 3.17019 104.72 2.89404C104.72 2.6179 104.496 2.39404 104.22 2.39404V3.39404ZM106.195 2.39404C105.918 2.39404 105.695 2.6179 105.695 2.89404C105.695 3.17019 105.918 3.39404 106.195 3.39404V2.39404ZM108.169 3.39404C108.445 3.39404 108.669 3.17019 108.669 2.89404C108.669 2.6179 108.445 2.39404 108.169 2.39404V3.39404ZM110.144 2.39404C109.868 2.39404 109.644 2.6179 109.644 2.89404C109.644 3.17019 109.868 3.39404 110.144 3.39404V2.39404ZM112.119 3.39404C112.395 3.39404 112.619 3.17019 112.619 2.89404C112.619 2.6179 112.395 2.39404 112.119 2.39404V3.39404ZM114.094 2.39404C113.818 2.39404 113.594 2.6179 113.594 2.89404C113.594 3.17019 113.818 3.39404 114.094 3.39404V2.39404ZM116.069 3.39404C116.345 3.39404 116.569 3.17019 116.569 2.89404C116.569 2.6179 116.345 2.39404 116.069 2.39404V3.39404ZM118.043 2.39404C117.767 2.39404 117.543 2.6179 117.543 2.89404C117.543 3.17019 117.767 3.39404 118.043 3.39404V2.39404ZM120.018 3.39404C120.294 3.39404 120.518 3.17019 120.518 2.89404C120.518 2.6179 120.294 2.39404 120.018 2.39404V3.39404ZM121.993 2.39404C121.717 2.39404 121.493 2.6179 121.493 2.89404C121.493 3.17019 121.717 3.39404 121.993 3.39404V2.39404ZM123.968 3.39404C124.244 3.39404 124.468 3.17019 124.468 2.89404C124.468 2.6179 124.244 2.39404 123.968 2.39404V3.39404ZM125.943 2.39404C125.667 2.39404 125.443 2.6179 125.443 2.89404C125.443 3.17019 125.667 3.39404 125.943 3.39404V2.39404ZM127.917 3.39404C128.194 3.39404 128.417 3.17019 128.417 2.89404C128.417 2.6179 128.194 2.39404 127.917 2.39404V3.39404ZM129.892 2.39404C129.616 2.39404 129.392 2.6179 129.392 2.89404C129.392 3.17019 129.616 3.39404 129.892 3.39404V2.39404ZM131.867 3.39404C132.143 3.39404 132.367 3.17019 132.367 2.89404C132.367 2.6179 132.143 2.39404 131.867 2.39404V3.39404ZM133.842 2.39404C133.566 2.39404 133.342 2.6179 133.342 2.89404C133.342 3.17019 133.566 3.39404 133.842 3.39404V2.39404ZM135.817 3.39404C136.093 3.39404 136.317 3.17019 136.317 2.89404C136.317 2.6179 136.093 2.39404 135.817 2.39404V3.39404ZM137.792 2.39404C137.515 2.39404 137.292 2.6179 137.292 2.89404C137.292 3.17019 137.515 3.39404 137.792 3.39404V2.39404ZM139.766 3.39404C140.042 3.39404 140.266 3.17019 140.266 2.89404C140.266 2.6179 140.042 2.39404 139.766 2.39404V3.39404ZM141.741 2.39404C141.465 2.39404 141.241 2.6179 141.241 2.89404C141.241 3.17019 141.465 3.39404 141.741 3.39404V2.39404ZM0.541992 3.39404H1.5294V2.39404H0.541992V3.39404ZM3.50421 3.39404H5.47902V2.39404H3.50421V3.39404ZM7.45384 3.39404H9.42865V2.39404H7.45384V3.39404ZM11.4035 3.39404H13.3783V2.39404H11.4035V3.39404ZM15.3531 3.39404H17.3279V2.39404H15.3531V3.39404ZM19.3027 3.39404H21.2775V2.39404H19.3027V3.39404ZM23.2523 3.39404H25.2272V2.39404H23.2523V3.39404ZM27.202 3.39404H29.1768V2.39404H27.202V3.39404ZM31.1516 3.39404H33.1264V2.39404H31.1516V3.39404ZM35.1012 3.39404H37.076V2.39404H35.1012V3.39404ZM39.0508 3.39404H41.0257V2.39404H39.0508V3.39404ZM43.0005 3.39404H44.9753V2.39404H43.0005V3.39404ZM46.9501 3.39404H48.9249V2.39404H46.9501V3.39404ZM50.8997 3.39404H52.8745V2.39404H50.8997V3.39404ZM54.8493 3.39404H56.8241V2.39404H54.8493V3.39404ZM58.799 3.39404H60.7738V2.39404H58.799V3.39404ZM62.7486 3.39404H64.7234V2.39404H62.7486V3.39404ZM66.6982 3.39404H68.673V2.39404H66.6982V3.39404ZM70.6478 3.39404H72.6227V2.39404H70.6478V3.39404ZM74.5975 3.39404H76.5723V2.39404H74.5975V3.39404ZM78.5471 3.39404H80.5219V2.39404H78.5471V3.39404ZM82.4967 3.39404H84.4715V2.39404H82.4967V3.39404ZM86.4464 3.39404H88.4212V2.39404H86.4464V3.39404ZM90.396 3.39404H92.3708V2.39404H90.396V3.39404ZM94.3456 3.39404H96.3204V2.39404H94.3456V3.39404ZM98.2953 3.39404H100.27V2.39404H98.2953V3.39404ZM102.245 3.39404H104.22V2.39404H102.245V3.39404ZM106.195 3.39404H108.169V2.39404H106.195V3.39404ZM110.144 3.39404H112.119V2.39404H110.144V3.39404ZM114.094 3.39404H116.069V2.39404H114.094V3.39404ZM118.043 3.39404H120.018V2.39404H118.043V3.39404ZM121.993 3.39404H123.968V2.39404H121.993V3.39404ZM125.943 3.39404H127.917V2.39404H125.943V3.39404ZM129.892 3.39404H131.867V2.39404H129.892V3.39404ZM133.842 3.39404H135.817V2.39404H133.842V3.39404ZM137.792 3.39404H139.766V2.39404H137.792V3.39404ZM141.741 3.39404H142.729V2.39404H141.741V3.39404Z" fill="#FFA412" />
+                                        </svg>
+                                   </div>
+                                   <input type="text" placeholder='Pincode' className='p-2 pl-6 w-full rounded-full text-black outline-none border-none' />
+                              </div>
+                              <div className='flex items-center justify-end w-full px-7'>
+                                   <button className='bg-darkYellow py-2 px-6 rounded-full shadow-[inset_0_2px_2px_rgba(0,0,0,0.25)]'>APPLY</button>
+                              </div>
+                         </div>
+                         <div className='absolute top-3 right-3 cursor-pointer' onClick={closeLocation}>
+                              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M10.7285 10.644L25.7285 25.644" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                   <path d="M10.7285 25.644L25.7285 10.644" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                   <circle cx="18.2285" cy="18.144" r="17" stroke="#FFA412" />
+                              </svg>
                          </div>
                     </div>
                </div>

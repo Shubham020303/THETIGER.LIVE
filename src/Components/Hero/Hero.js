@@ -46,17 +46,17 @@ const Hero = () => {
      }
 
      return (
-          <div className='w-full flex items-center justify-evenly pb-10'>
-               <div className='w-[65%] flex items-center justify-center' ref={slideRef}>
+          <div className='w-full flex flex-col items-center justify-evenly pb-5 px-4 md:flex-row md:pb-10'>
+               <div className='w-full flex items-center justify-center mb-4 md:mb-0 md:w-[65%]' ref={slideRef}>
                     <div className=''>
-                         <img src={offers[currentIndex]} className='w-full h-full'/>
+                         <img src={offers[currentIndex]} className='w-full h-full' />
                     </div>
                </div>
-               <div className='w-[30%] flex flex-col items-center justify-between'>
-                    <div className='mb-10'>
+               <div className='w-full flex flex-row items-center justify-between md:flex-col md:w-[30%]'>
+                    <div className='w-[48%] md:w-full md:mb-5 lg:mb-10'>
                          <img src={subHero1} />
                     </div>
-                    <div>
+                    <div className='w-[48%] md:w-full'>
                          <img src={subHero2} />
                     </div>
                </div>

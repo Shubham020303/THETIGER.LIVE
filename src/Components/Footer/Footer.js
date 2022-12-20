@@ -12,8 +12,8 @@ import youtube from "../../Images/youtube.png";
 
 const Footer = () => {
      return (
-          <div className='bg-[#F1F1F1] py-4'>
-               <div className='flex items-start justify-around py-4 px-5 bg-[#F1F1F1]'>
+          <div className='bg-[#F1F1F1] py-4 px-4 md:px-0'>
+               <div className='flex flex-col items-start justify-around py-4 px-5 gap-4 bg-[#F1F1F1] md:flex-row'>
                     <div className='flex flex-col items-start'>
                          <h1 className='text-[#1A477A] font-semibold'>About Tiger.live</h1>
                          <svg width="75" height="7" viewBox="0 0 77 7" fill="none" xmlns="http://www.w3.org/2000/svg" className='mt-2'>
@@ -116,9 +116,9 @@ const Footer = () => {
                          </ul>
                     </div>
                </div>
-               <div className='w-[90%] h-1 border-t border-t-[#1A477A80] mx-auto my-4'></div>
+               <div className='w-full h-1 border-t border-t-[#1A477A80] mx-auto my-4 md:w-[90%]'></div>
                <div className='flex items-center justify-center'>
-                    <p className='text-[#1A477A] font-medium'>(©) Copyright 2022 Thetiger.live All Rights Reserved.</p>
+                    <p className='text-[#1A477A] font-medium text-center md:text-left'>(©) Copyright 2022 Thetiger.live All Rights Reserved.</p>
                </div>
           </div>
      )
