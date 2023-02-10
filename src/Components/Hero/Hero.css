@@ -1,3 +1,5 @@
+/* Fade Animation For The Silder Starts  */
+
 .sliderContainer img {
      animation: fadeImg 1s ease-out;
 }
@@ -11,3 +13,5 @@
           opacity: 1;
      }
 }
+
+/* Fade Animation For The Silder Ends  */

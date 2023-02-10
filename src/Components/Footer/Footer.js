@@ -13,7 +13,13 @@ import youtube from "../../Images/youtube.png";
 const Footer = () => {
      return (
           <div className='bg-[#F1F1F1] py-4 px-4 md:px-0'>
+
+               {/* 5 Column Div Starts */}
+
                <div className='flex flex-col items-start justify-around py-4 px-5 gap-4 bg-[#F1F1F1] md:flex-row'>
+
+                    {/* 1st Column Starts */}
+
                     <div className='flex flex-col items-start'>
                          <h1 className='text-[#1A477A] font-semibold'>About Tiger.live</h1>
                          <svg width="75" height="7" viewBox="0 0 77 7" fill="none" xmlns="http://www.w3.org/2000/svg" className='mt-2'>
@@ -28,6 +34,11 @@ const Footer = () => {
                               <li className='text-[#1A477A] font-medium my-3'><a href='#'>Sitemap</a></li>
                          </ul>
                     </div>
+
+                    {/* 1st Column Ends */}
+
+                    {/* 2nd Column Starts */}
+
                     <div className='flex flex-col items-start'>
                          <h1 className='text-[#1A477A] font-semibold'>Useful Reads</h1>
                          <svg width="75" height="7" viewBox="0 0 77 7" fill="none" xmlns="http://www.w3.org/2000/svg" className='mt-2'>
@@ -39,6 +50,11 @@ const Footer = () => {
                               <li className='text-[#1A477A] font-medium my-3'><a href='#'>Anti-Spam Policy</a></li>
                          </ul>
                     </div>
+
+                    {/* 2nd Column Ends */}
+
+                    {/* 3rd Column Starts */}
+
                     <div className='flex flex-col items-center justify-around h-[250px]'>
                          <div className='w-[220px]'>
                               <img src={logo} className='w-full h-full' />
@@ -47,6 +63,11 @@ const Footer = () => {
                               <img src={partner} className='w-full h-full' />
                          </div>
                     </div>
+
+                    {/* 3rd Column Ends */}
+
+                    {/* 4th Column Starts */}
+
                     <div className='flex flex-col items-start'>
                          <h1 className='text-[#1A477A] font-semibold'>Special Pages</h1>
                          <svg width="75" height="7" viewBox="0 0 77 7" fill="none" xmlns="http://www.w3.org/2000/svg" className='mt-2'>
@@ -59,6 +80,11 @@ const Footer = () => {
                               <li className='text-[#1A477A] font-medium my-3'><a href='#'>Student Program</a></li>
                          </ul>
                     </div>
+
+                    {/* 4th Column Ends */}
+
+                    {/* 5th Column Starts */}
+
                     <div className='flex flex-col items-start'>
                          <h1 className='text-[#1A477A] font-semibold'>Connect With Us</h1>
                          <svg width="75" height="7" viewBox="0 0 77 7" fill="none" xmlns="http://www.w3.org/2000/svg" className='mt-2'>
@@ -115,11 +141,26 @@ const Footer = () => {
                               </a></li>
                          </ul>
                     </div>
+
+                    {/* 5th Column Ends */}
+
                </div>
+
+               {/* 5 Column Div Starts */}
+
+               {/* Line Div Starts */}
+
                <div className='w-full h-1 border-t border-t-[#1A477A80] mx-auto my-4 md:w-[90%]'></div>
+
+               {/* Line Div Ends */}
+
+               {/* Copyright Div Starts */}
+
                <div className='flex items-center justify-center'>
                     <p className='text-[#1A477A] font-medium text-center md:text-left'>(©) Copyright 2022 Thetiger.live All Rights Reserved.</p>
                </div>
+
+               {/* Copyright Div Ends */}
           </div>
      )
 }

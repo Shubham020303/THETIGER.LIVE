@@ -10,6 +10,7 @@ import hero3 from "../../Images/hero3.png";
 import subHero1 from "../../Images/subHero1.png";
 import subHero2 from "../../Images/subHero2.png";
 
+{/* Images Array To Use In Slider */}
 const offers = [
      hero1,
      hero2,
@@ -20,6 +21,8 @@ let count = 0;
 let slideInterval;
 
 const Hero = () => {
+
+     {/* Images Slider Logic Starts */}
 
      const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -45,13 +48,23 @@ const Hero = () => {
           }, 3000);
      }
 
+     {/* Images Slider Logic Ends */}
+
      return (
           <div className='w-full flex flex-col items-center justify-evenly pb-5 px-4 md:flex-row md:pb-10'>
+
+               {/* Images Slider Div Starts */}
+
                <div className='w-full flex items-center justify-center mb-4 md:mb-0 md:w-[65%]' ref={slideRef}>
                     <div className=''>
                          <img src={offers[currentIndex]} className='w-full h-full' />
                     </div>
                </div>
+
+               {/* Images Slider Div Ends */}
+
+               {/* Images Column Div Starts */}
+
                <div className='w-full flex flex-row items-center justify-between md:flex-col md:w-[30%]'>
                     <div className='w-[48%] md:w-full md:mb-5 lg:mb-10'>
                          <img src={subHero1} />
@@ -60,6 +73,9 @@ const Hero = () => {
                          <img src={subHero2} />
                     </div>
                </div>
+
+               {/* Images Column Div Ends */}
+
           </div>
      )
 }
